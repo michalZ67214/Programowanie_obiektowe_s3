@@ -7,7 +7,8 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             //Zadanie1();
-            Zadanie2();
+            //Zadanie2();
+            Zadanie3();
         }
 
         static void Zadanie1()
@@ -34,6 +35,25 @@ namespace ConsoleApp1
             Sumator sumator1 = new Sumator(liczby);
             sumator1.View();
             sumator1.ViewLowIndexHighIndex(3, 3);
+        }
+
+        static void Zadanie3()
+        {
+            Data data1 = new Data(DateTime.Now);
+            Console.WriteLine(data1.getCurrentDate());
+            data1.PlusOneDay();
+            Console.WriteLine(data1.getCurrentDate());
+            data1.MinusOneDay();
+            Console.WriteLine(data1.getCurrentDate());
+
+            Console.WriteLine();
+
+            Data data2 = new Data(new DateTime(2008, 6, 1));
+            Console.WriteLine(data2.getCurrentDate());
+            data2.PlusOneDay();
+            Console.WriteLine(data2.getCurrentDate());
+            data2.MinusOneDay();
+            Console.WriteLine(data2.getCurrentDate()); 
         }
     }
 }
