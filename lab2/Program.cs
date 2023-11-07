@@ -6,7 +6,12 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            // Zadanie 1
+            //Zadanie1();
+            Zadanie2();
+        }
+
+        static void Zadanie1()
+        {
             Licz[] liczs = new Licz[]
             {
                 new Licz(1),
@@ -14,14 +19,21 @@ namespace ConsoleApp1
                 new Licz(3)
             };
 
-            foreach(Licz item in liczs)
+            foreach (Licz item in liczs)
             {
                 item.View(2);
                 Console.WriteLine(item.ToString());
                 Console.WriteLine();
             }
+        }
 
-            // Zadanie 1 koniec
+        static void Zadanie2()
+        {
+            int[] liczby = new int[] {1, 2, 3, 4};
+
+            Sumator sumator1 = new Sumator(liczby);
+            sumator1.View();
+            sumator1.ViewLowIndexHighIndex(3, 3);
         }
     }
 }
