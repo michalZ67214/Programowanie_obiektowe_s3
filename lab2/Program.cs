@@ -8,7 +8,8 @@ namespace ConsoleApp1
         {
             //Zadanie1();
             //Zadanie2();
-            Zadanie3();
+            //Zadanie3();
+            Zadanie4();
         }
 
         static void Zadanie1()
@@ -55,5 +56,16 @@ namespace ConsoleApp1
             data2.MinusOneDay();
             Console.WriteLine(data2.getCurrentDate()); 
         }
+
+        static void Zadanie4()
+        {
+            Liczba l1 = new Liczba("11");
+            l1.WypiszLiczbe();
+            l1.Mnozenie(33);
+            l1.WypiszLiczbe();
+            l1.Silnia(5);
+        }
+
+
     }
 }
