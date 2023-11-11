@@ -8,11 +8,11 @@ namespace zadania
 {
     internal class Book
     {
-        private string title;
+        protected string title;
 
-        private Person author;
+        protected Person author;
 
-        private string dataWydania;
+        protected string dataWydania;
 
         public Book(string title, Person author, string dataWydania)
         {
