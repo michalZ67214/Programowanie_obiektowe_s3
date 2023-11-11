@@ -7,7 +7,8 @@
 //Zadanie1c();
 //Zadanie1d();
 //Zadanie1f();
-Zadanie1g();
+//Zadanie1g();
+Zadanie2();
 
 // koniec main
 
@@ -108,4 +109,25 @@ static void Zadanie1g()
         person.View();
         Console.WriteLine("\n---\n");
     }
+}
+
+static void Zadanie2()
+{
+    Samochod s1 = new Samochod("Audi", "Q8", "sedan", "srebrny", 2020, 250000);
+    Samochod s2 = new Samochod("Citroen", "C3", "crossover", "zielony", 2015, 300000);
+
+    SamochodOsobowy so1 = new SamochodOsobowy("Audi", "A8", "Catchback", "czerwony",
+        2019, 230000, 3, 2, 5);
+
+    Console.WriteLine("Pierwszy samochod:");
+    s1.View();
+    Console.WriteLine();
+
+    Console.WriteLine("Drugi samochod:");
+    s2.View();
+    Console.WriteLine();
+
+    Console.WriteLine("Trzeci samochod:");
+    so1.View();
+    Console.WriteLine();
 }
