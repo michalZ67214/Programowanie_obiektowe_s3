@@ -23,5 +23,12 @@ namespace zadania
                 b.ViewTitle();
             }
         }
+
+        public void View()
+        {
+            base.View();
+            Console.WriteLine("Przeczytane ksiazki: ");
+            this.ViewBook();
+        }
     }
 }

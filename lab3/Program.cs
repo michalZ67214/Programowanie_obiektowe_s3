@@ -3,7 +3,8 @@
 // main
 
 //Zadanie1a();
-Zadanie1b();
+//Zadanie1b();
+Zadanie1c();
 
 // koniec main
 
@@ -38,4 +39,15 @@ static void Zadanie1b()
 
     Console.WriteLine("Ksiazki przeczytane przez czytelnika 2:");
     reader2.ViewBook();
+}
+
+static void Zadanie1c()
+{
+    Person p1 = new Person("Marek", "Mostowiak", 32);
+
+    Book b1 = new Book("Tytul111", p1, "26.01.2023");
+    Book b2 = new Book("Tytul222", p1, "26.02.2023");
+
+    Reader reader1 = new Reader("Jan", "Nowak", 25, new Book[2] { b1, b2 });
+    reader1.View();
 }
