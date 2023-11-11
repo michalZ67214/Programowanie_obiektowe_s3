@@ -28,5 +28,10 @@ namespace zadania
             this.author.View();
             Console.WriteLine($"Data wydania: {dataWydania}");
         }
+
+        public void ViewTitle()
+        {
+            Console.WriteLine(this.title);
+        }
     }
 }
