@@ -8,7 +8,7 @@ namespace zadania
 {
     internal class Reader:Person
     {
-        Book[] bookArray = new Book[10];
+        protected Book[] bookArray = new Book[10];
 
         public Reader(string FirstName, string LastName, int wiek, Book[] bookArray) : 
             base(FirstName, LastName, wiek)

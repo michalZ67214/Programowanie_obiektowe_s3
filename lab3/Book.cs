@@ -33,5 +33,10 @@ namespace zadania
         {
             Console.WriteLine(this.title);
         }
+
+        public string GetTitle()
+        {
+            return this.title;
+        }
     }
 }
