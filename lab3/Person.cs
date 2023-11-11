@@ -19,7 +19,7 @@ namespace zadania
             this.wiek = wiek;
         }
 
-        public void View()
+        public virtual void View()
         {
             Console.WriteLine($"Imie: {this.FirstName}\n" +
                 $"Nazwisko: {this.LastName}\n" +

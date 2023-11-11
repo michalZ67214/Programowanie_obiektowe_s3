@@ -4,7 +4,8 @@
 
 //Zadanie1a();
 //Zadanie1b();
-Zadanie1c();
+//Zadanie1c();
+Zadanie1d();
 
 // koniec main
 
@@ -50,4 +51,15 @@ static void Zadanie1c()
 
     Reader reader1 = new Reader("Jan", "Nowak", 25, new Book[2] { b1, b2 });
     reader1.View();
+}
+
+static void Zadanie1d()
+{
+    Person p1 = new Person("Marek", "Mostowiak", 32);
+
+    Book b1 = new Book("Tytul111", p1, "26.01.2023");
+    Book b2 = new Book("Tytul222", p1, "26.02.2023");
+
+    Person o = new Reader("Jan", "Nowak", 25, new Book[2] { b1, b2 });
+    o.View();
 }

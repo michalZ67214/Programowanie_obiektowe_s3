@@ -24,7 +24,7 @@ namespace zadania
             }
         }
 
-        public void View()
+        public override void View()
         {
             base.View();
             Console.WriteLine("Przeczytane ksiazki: ");
