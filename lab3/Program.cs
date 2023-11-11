@@ -6,7 +6,8 @@
 //Zadanie1b();
 //Zadanie1c();
 //Zadanie1d();
-Zadanie1f();
+//Zadanie1f();
+Zadanie1g();
 
 // koniec main
 
@@ -84,4 +85,27 @@ static void Zadanie1f()
 
     Console.WriteLine("Ksiazki ocenione przez recenzenta nr 2:");
     r2.Wypisz();
+}
+
+static void Zadanie1g()
+{
+    Person author = new Person("Marek", "Mostowiak", 32);
+
+    Book b1 = new Book("Tytul111", author, "26.01.2023");
+    Book b2 = new Book("Tytul222", author, "26.02.2023");
+    Book b3 = new Book("Tytul333", author, "26.03.2023");
+    Book b4 = new Book("Tytul444", author, "26.04.2023");
+
+    Reader p1 = new Reader("Jan", "Nowak", 25, new Book[2] { b1, b2 });
+    Reviewer p2 = new Reviewer("Jan", "Kowalski", 22, new Book[2] { b3, b4 });
+
+    List<Person> osoby = new List<Person>();
+    osoby.Add(p1);
+    osoby.Add(p2);
+
+    foreach (Person person in osoby)
+    {
+        person.View();
+        Console.WriteLine("\n---\n");
+    }
 }
