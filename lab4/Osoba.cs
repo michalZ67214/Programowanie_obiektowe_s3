@@ -21,5 +21,13 @@ namespace zadania
         {
             return Imie+" "+Nazwisko;
         }
+
+        public static void WypiszOsoby(List<Osoba> osoby)
+        {
+            foreach(Osoba o in osoby)
+            {
+                Console.WriteLine(o.ZwrocPelnaNazwe());
+            }
+        }
     }
 }

@@ -117,4 +117,6 @@ static void Zadanie3()
     osoby.Add(o1);
     osoby.Add(o2);
     osoby.Add(o3);
+
+    Osoba.WypiszOsoby(osoby);
 }
