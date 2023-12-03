@@ -127,4 +127,9 @@ static void Zadanie3()
     Console.WriteLine("Student: ");
     Student_3 s1 = new Student_3("Jan", "Wojcik", "WSIiZ", "II", "2022", "3");
     Console.WriteLine(s1.WypiszPelnaNazweIUczelnie());
+
+    Console.WriteLine();
+    Console.WriteLine("Student WSIiZ: ");
+    StudentWSIiZ sW1 = new StudentWSIiZ("Jan", "Wojcik", "WSIiZ", "II", "2022", "3", "w23142");
+    Console.WriteLine(sW1.WypiszPelnaNazweIUczelnie());
 }

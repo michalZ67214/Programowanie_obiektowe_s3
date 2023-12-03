@@ -25,7 +25,7 @@ namespace zadania
             Semestr = semestr;
         }
 
-        public string WypiszPelnaNazweIUczelnie()
+        public virtual string WypiszPelnaNazweIUczelnie()
         {
             return $"{Imie} {Nazwisko} - {Semestr}{Kierunek} {Rok} {Uczelnia}";
         }
