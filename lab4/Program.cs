@@ -66,7 +66,7 @@ static void Zadanie2()
     Student s2 = new Student();
 
     s2.SetFirstName("Kamil");
-    s2.SetLastName("Wójcik");
+    s2.SetLastName("Wojcik");
     s2.SetPesel("11252933291", true);
     s2.SetSchool("Szkola podstawowa nr 1");
     s2.SetCanGoHomeAlone(false);
@@ -122,4 +122,9 @@ static void Zadanie3()
     Osoba.PosortujOsobyPoNazwisku(ref osoby);
     Console.WriteLine();
     Osoba.WypiszOsoby(osoby);
+
+    Console.WriteLine();
+    Console.WriteLine("Student: ");
+    Student_3 s1 = new Student_3("Jan", "Wojcik", "WSIiZ", "II", "2022", "3");
+    Console.WriteLine(s1.WypiszPelnaNazweIUczelnie());
 }
