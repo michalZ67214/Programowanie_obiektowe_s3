@@ -29,5 +29,10 @@ namespace zadania
                 Console.WriteLine(o.ZwrocPelnaNazwe());
             }
         }
+
+        public static void PosortujOsobyPoNazwisku(ref List<Osoba> osoby)
+        {
+            osoby = osoby.OrderBy(o => o.Nazwisko).ToList();
+        }
     }
 }

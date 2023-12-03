@@ -119,4 +119,7 @@ static void Zadanie3()
     osoby.Add(o3);
 
     Osoba.WypiszOsoby(osoby);
+    Osoba.PosortujOsobyPoNazwisku(ref osoby);
+    Console.WriteLine();
+    Osoba.WypiszOsoby(osoby);
 }
