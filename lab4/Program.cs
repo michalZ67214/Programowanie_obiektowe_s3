@@ -1,7 +1,8 @@
 ﻿using zadania;
 
 //Zadanie1();
-Zadanie2();
+//Zadanie2();
+Zadanie3();
 
 static void Zadanie1()
 {
@@ -104,5 +105,16 @@ static void Zadanie2()
     Console.WriteLine("Uczniowie ktorzy moga isc sami do domu: ");
 
     t1.WhichStudentCanGoHomeAlone(new DateTime(2023, 12, 4));
+}
 
+static void Zadanie3()
+{
+    Osoba o1 = new Osoba("Jan", "Kowalski");
+    Osoba o2 = new Osoba("Maciej", "Nowak");
+    Osoba o3 = new Osoba("Kamil", "Kowalczyk");
+
+    List<Osoba> osoby = new List<Osoba>();
+    osoby.Add(o1);
+    osoby.Add(o2);
+    osoby.Add(o3);
 }
