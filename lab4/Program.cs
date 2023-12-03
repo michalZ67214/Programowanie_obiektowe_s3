@@ -1,7 +1,7 @@
 ﻿using zadania;
 
-Zadanie1();
-//Zadanie2();
+//Zadanie1();
+Zadanie2();
 
 static void Zadanie1()
 {
