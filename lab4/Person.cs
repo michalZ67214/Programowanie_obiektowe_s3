@@ -11,6 +11,7 @@ namespace zadania
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Pesel { get; set; }
+        public bool After2000 { get; set; }
 
         public void SetFirstName(string firstName)
         {
@@ -22,9 +23,10 @@ namespace zadania
             this.LastName = lastName;
         }
 
-        public void SetPesel(string pesel)
+        public void SetPesel(string pesel, bool after2000)
         {
             this.Pesel = pesel;
+            this.After2000 = after2000;
         }
 
         public int GetAge()
@@ -35,7 +37,10 @@ namespace zadania
 
             int currentYear = DateTime.Now.Year;
 
-            int age = currentYear - (1900 + year);
+            int age;
+
+            if(this.After2000) age = currentYear - (2000 + year);
+            else age = currentYear - (1900 + year);
 
             return age;
         }
